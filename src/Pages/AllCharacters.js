@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {getCharactersPosition} from '../Services/getCharacters'
+import getCharacterPosition from '../Services/getCharacters'
 import { Link } from 'react-router-dom'
 import logo from '../Images/logo-dragonball.png'
 import planet from '../Images/planet.png'
@@ -15,8 +15,8 @@ const Characters = () => {
 
     
 
-    const getCharacterPos = () => {
-        getCharactersPosition(page)
+    const getCharacterPos = (page) => {
+        getCharacterPosition(page)
         .then((res) => {
             setPage(res.data?.meta?.currentPage)
             setCharacters(res.data)
