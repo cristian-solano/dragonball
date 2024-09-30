@@ -1,0 +1,189 @@
+.all-container {
+    width: 100%;
+    background: linear-gradient(to top, #000000c6, #21111199), url('../Images/background-principal.jpeg') fixed;
+    background-size: cover;
+    padding: 120px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.all-characters-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.all-character {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #bda80e;
+    padding:80px 0 0;
+    background: linear-gradient(to top, #cf020280, #0808084d), url('../Images/backTarget.jpeg') fixed;
+}
+
+
+
+.all-character .all-character-logo {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    top: 10px;
+    right: 10px;
+}
+
+.all-character-planet {
+    position: absolute;
+    width: auto;
+    height: 50px;
+    top: 50px;
+    right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.all-character-planet .all-character-planet-image {
+    width: 20px;
+    height: 20px;
+}
+
+.all-character-planet p {
+    font-size: 20px;
+    color: var(--color-letter);
+    font-family: "Caveat", cursive;
+}
+
+.all-character-image {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+    filter: drop-shadow(0 -6mm 4mm rgb(2, 0, 0));
+}
+
+
+.all-content {
+    width: 100%;
+    background-color: #000000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #bda80e;
+}
+
+.all-content a {
+    text-decoration: none;
+    color: inherit;
+    transition: 1s;
+}
+
+.all-content a:hover h2 {
+    color: #fbfbfb;
+    cursor: pointer;
+}
+
+.all-content a h2 {
+    font-size: 50px;
+}
+
+.all-content-power {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-content-their-power {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    padding: 10px;
+    color: #fbfbfb;
+}
+
+.all-content-their-power p{
+    font-size: 18px;
+    font-family: "Caveat", cursive;
+}
+
+.all-content-their-power h3 {
+    font-size: 20px;
+}
+
+.all-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.all-buttons button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.all-buttons button img {
+    width: 100px;
+}
+
+.all-buttons button:nth-child(1) img {
+    transform: scaleX(-1);
+}
+
+@media (max-width:1200px) {
+    .all-character-image {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+        filter: drop-shadow(0 -6mm 4mm rgb(2, 0, 0));
+    }
+
+    .all-content a h2 {
+        font-size: 30px;
+    }
+
+    .all-content-their-power p{
+        font-size: 15px;
+        font-family: "Caveat", cursive;
+    }
+    
+    .all-content-their-power h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .all-characters-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+

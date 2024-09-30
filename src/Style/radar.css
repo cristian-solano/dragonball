@@ -1,0 +1,50 @@
+.radar-content {
+    width: 100%;
+    position: fixed;
+    top: 5%;
+    left: 10px;
+}
+
+.radar-content img {
+    width: 150px;
+    height: 150px;
+}
+
+.radar-content span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #ffff58e2, #92982ad3);
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    animation: tiktok 1s infinite;
+
+}
+
+@keyframes tiktok {
+    0% {
+        width: 5px;
+        height: 5px;
+    }
+
+    100% {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+
+@media (max-width: 1500px) {
+
+    .radar-content img {
+        width: 70px;
+        height: 70px;
+        
+    }
+
+    .radar-content span {
+        top: 30px;
+        left: 20px;
+    }
+}
