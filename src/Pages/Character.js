@@ -16,8 +16,8 @@ const Character = () => {
     }
 
 
-    const getCharacter = () => {
-        getDetailCharacter(id.id)
+    const getCharacter = (id) => {
+        getDetailCharacter(id)
         .then(res => {
             setCharacter(res.data)
             console.log(res.data)
@@ -28,8 +28,8 @@ const Character = () => {
     }
 
     useEffect(() => {
-        getCharacter()
-    },[])
+        getCharacter(id.id)
+    },[id])
 
   return (
     <div className='character-container' style={{backgroundSize: "cover",background: `url(${character?.originPlanet?.image})`}}>
