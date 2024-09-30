@@ -35,7 +35,7 @@ const Character = () => {
     <div className='character-container' style={{backgroundSize: "cover",background: `url(${character?.originPlanet?.image})`}}>
         <div className='character-content'>
             <label htmlFor='nav' className='character-nav'>
-                <img src={esfera} alt="theTransform"/>
+                <img src={esfera} alt="the-transform"/>
             </label>
             <input id="nav" type='checkbox' style={{display: 'none'}}/>
             <div className='character-content-transform'>
@@ -61,7 +61,7 @@ const Character = () => {
                 <div className='character-card-info'>
                     <div className='character-card-first'>
                         <div className='character-card-first-img'>
-                            <img src={character.image}/>
+                            <img src={character.image} alt="character"/>
                         </div>
                         <div className='character-card-first-data'>
                             <h2>{character.name}</h2>
@@ -77,7 +77,7 @@ const Character = () => {
                     </div>
                 </div>
                 <div className='character-card-image'>
-                    <img src={transform === "" ? character.image : transform} alt="image"/>
+                    <img src={transform === "" ? character.image : transform} alt="transform"/>
                 </div>
                 
             </div>

@@ -41,7 +41,7 @@ const Characters = () => {
                         <img src={planet} className='all-character-planet-image' alt="planet" />
                         <p>{warrior.affiliation}</p>
                     </div>
-                    <img className='all-character-image' src={warrior.image} alt={`warrior-${warrior.id}`}/>
+                    <img className='all-character-image' src={warrior.image} alt="miwarrior"/>
                     <div className='all-content'>
                         <Link to={`/character/${warrior.id}`}>
                             <h2>{warrior.name}</h2>
